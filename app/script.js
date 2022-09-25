@@ -33,7 +33,7 @@ async function getAllCountries(url) {
             const capital = data.capital == null||undefined ? "None": data.capital;
 
             country_parent.innerHTML += `<div class="country">
-            <button class="country_el" onclick=showCountry(this) data-country="${country}">
+            <div class="country_el" onclick=showCountry(this) data-country="${country}">
                 <img
                   src="${flag}"
                   alt="Flag-${country}"
@@ -54,7 +54,7 @@ async function getAllCountries(url) {
                       ${capital}
                   </div>
                 </div>
-              </button>
+              </div>
         </div>`
         });
 
