@@ -252,9 +252,9 @@ main header nav {
 
 /* loading */
 .loader, .error{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+  width: 100%;
+  height: 300px;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -273,6 +273,7 @@ h1.error {
   justify-content: center;
   gap: 75px;
   padding-bottom: 75px;
+  position: relative;
 }
 #countries .country{
   height: 100%;
@@ -374,6 +375,7 @@ h1.error {
 }
 
 #country_details {
+  position: relative;
   background-color: transparent;
   display: flex;
   flex-direction: column;
