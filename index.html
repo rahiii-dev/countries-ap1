@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Country API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <link rel="stylesheet" href="./app/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <nav>
+            <h1>Where in the world?</h1>
+            <button id="change_mode">
+              <i class="fa-regular fa-moon"></i>
+              <span id="mode">Dark Mode</span>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <section id="countries_sec">
+
+        <div class="container">
+
+          <div class="search_filter">
+
+            <div class="search_container">
+              <form action="#" method="get" id="search_country_form">
+                <input type="text" id="serch_country" autocomplete="off" placeholder="Search for a country..."/>
+                <button type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+  
+            <div class="filter_container">
+              <div>
+                <button id="filter_btn">
+                  <span>Filter by Region</span>
+                  <span class="arrow"><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                </button>
+    
+                <div id="regions">
+                  <button>Africa</button>
+                  <button>America</button>
+                  <button>Asia</button>
+                  <button>Europe</button>
+                  <button>Oceania</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+            <div id="countries">
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="single_country">
+        <div class="container">
+          <button id="back">
+            <span><i class="bi bi-arrow-left"></i></span>
+            <span>Back</span>
+          </button>
+          <div id="country_details">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app/script.js"></script>
+  </body>
+</html>
