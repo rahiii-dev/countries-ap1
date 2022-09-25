@@ -130,6 +130,8 @@ serchCountryForm.addEventListener('submit', async(e)=> {
         let c_value = serchCountry.value
 
         if(c_value != ""){
+          c_value = c_value.trim()
+          
           if(c_value.toLowerCase() == "all"){
             getAllCountries('https://restcountries.com/v2/all?fields=flags,name,population,region,capital')
           }
