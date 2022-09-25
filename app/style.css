@@ -251,12 +251,7 @@ main header nav {
 
 
 /* loading */
-h1.error {
-  font-weight: 300;
-  white-space: nowrap;
-  color: rgb(168, 168, 168);
-}
-.loader {
+.loader, .error{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -265,6 +260,11 @@ h1.error {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+h1.error {
+  font-weight: 300;
+  white-space: nowrap;
+  color: rgb(168, 168, 168);
 }
 
 #countries {
