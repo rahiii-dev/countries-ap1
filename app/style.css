@@ -108,6 +108,7 @@ main header nav {
 #change_mode {
   cursor: pointer;
   background: transparent;
+  font-size: var(--fs);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
