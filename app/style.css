@@ -94,6 +94,12 @@ main header{
 section.search_filter{
   z-index: 3;
 }
+section > h1{
+  background-color: red;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 #single_country{
   z-index: 5;
 }
